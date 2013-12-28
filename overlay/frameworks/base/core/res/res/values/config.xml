@@ -282,4 +282,6 @@
     <!-- Disable lockscreen translucent decor by default -->
     <bool name="config_enableLockScreenTranslucentDecor">true</bool>
 
+    <!-- Enable smartcover sleep/wake -->
+    <bool name="config_lidControlsSleep">true</bool>
 </resources>
