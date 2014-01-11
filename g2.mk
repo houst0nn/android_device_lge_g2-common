@@ -104,11 +104,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
         ro.sf.lcd_density=480 \
 	ro.opengles.version=196608
 
-# Audio Configuration
 PRODUCT_PROPERTY_OVERRIDES += \
-	persist.audio.fluence.voicecall=true \
-	persist.audio.dualmic.config=endfire \
-	af.resampler.quality=4
+	ro.qc.sdk.audio.ssr=false \
+	ro.qc.sdk.audio.fluencetype=fluence \
+	persist.audio.fluence.mode=endfire \
+	persist.audio.handset.mic=digital \
+	persist.audio.voicecall.mic=0 \
+	persist.audio.voice.clarity=none \
+	persist.audio.aanc.enable=false \
+	persist.audio.handset_rx_type=DEFAULT \
+	persist.audio.nsenabled=ON \
+	persist.audio.spkcall_2mic=OFF \
+	ro.config.vc_call_vol_steps=7 \
+	ro.config.vc_call_vol_default=5 \
+	audio.offload.disable=0
 
 # Do not power down SIM card when modem is sent to Low Power Mode.
 PRODUCT_PROPERTY_OVERRIDES += \
