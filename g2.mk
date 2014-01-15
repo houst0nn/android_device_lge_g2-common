@@ -68,8 +68,18 @@ PRODUCT_COPY_FILES += \
 
 # GPS configuration
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config \
-    $(LOCAL_PATH)/gps.conf:system/etc/gps.conf
+    $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
+
+ifeq ($(TARGET_DEVICE),d802)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/gps.conf-eu:system/etc/gps.conf
+else ifeq ($(TARGET_DEVICE),f320)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/gps.conf-kr:system/etc/gps.conf
+else
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
+endif
 
 PRODUCT_PACKAGES += \
     charger_res_images \
