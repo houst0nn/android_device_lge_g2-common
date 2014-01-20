@@ -115,8 +115,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.audio.handset_rx_type=DEFAULT \
 	persist.audio.nsenabled=ON \
 	persist.audio.spkcall_2mic=OFF \
-	ro.config.vc_call_vol_steps=7 \
-	ro.config.vc_call_vol_default=5 \
+	ro.config.vc_call_vol_steps=12 \
+	ro.config.vc_call_vol_default=6 \
 	audio.offload.disable=0
 
 # Do not power down SIM card when modem is sent to Low Power Mode.

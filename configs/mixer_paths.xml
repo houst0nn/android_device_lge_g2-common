@@ -297,7 +297,7 @@
         <ctl name="SLIM RX1 MUX" value="AIF1_PB" />
         <ctl name="SLIM_0_RX Channels" value="One" />
         <ctl name="RX7 MIX1 INP1" value="RX1" />
-        <ctl name="RX7 Digital Volume" value="62" />
+        <ctl name="RX7 Digital Volume" value="65" />
         <ctl name="SPK DRV Volume" value="7" />
         <ctl name="SPK DAC Switch" value="1" />
     </path>
@@ -353,7 +353,7 @@
     <path name="voice-speaker">
         <path name="speaker" />
         <ctl name="SPK DRV Volume" value="8" />
-        <ctl name="RX7 Digital Volume" value="65" />
+        <ctl name="RX7 Digital Volume" value="68" />
     </path>
 
     <path name="voice-speaker-mic">
@@ -382,10 +382,10 @@
         <path name="headphones" />
         <ctl name="HPHL Volume" value="12" />
         <ctl name="HPHR Volume" value="12" />
-        <ctl name="RX1 Digital Volume" value="52" />
-        <ctl name="RX2 Digital Volume" value="52" />
+        <ctl name="RX1 Digital Volume" value="57" />
+        <ctl name="RX2 Digital Volume" value="57" />
         <ctl name="RX7 MIX1 INP1" value="RX1" />
-        <ctl name="RX7 Digital Volume" value="60" />
+        <ctl name="RX7 Digital Volume" value="65" />
     </path>
 
     <path name="usb-headphones">
