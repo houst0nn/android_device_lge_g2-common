@@ -105,19 +105,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.opengles.version=196608
 
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.qc.sdk.audio.ssr=false \
-	ro.qc.sdk.audio.fluencetype=fluence \
-	persist.audio.fluence.mode=endfire \
-	persist.audio.handset.mic=digital \
-	persist.audio.voicecall.mic=0 \
-	persist.audio.voice.clarity=none \
-	persist.audio.aanc.enable=false \
-	persist.audio.handset_rx_type=DEFAULT \
-	persist.audio.nsenabled=ON \
-	persist.audio.spkcall_2mic=OFF \
-	ro.config.vc_call_vol_steps=12 \
-	ro.config.vc_call_vol_default=6 \
-	audio.offload.disable=0
+        persist.audio.fluence.voicecall=true \
+        persist.audio.dualmic.config=endfire \
+        af.resampler.quality=4
 
 # Do not power down SIM card when modem is sent to Low Power Mode.
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -188,6 +178,7 @@ PRODUCT_PACKAGES += \
 	camera.g2
 
 PRODUCT_PACKAGES += \
+        audio_policy.default \
 	audio_policy.default \
 	audio.primary.msm8974 \
 	audio.a2dp.default \
